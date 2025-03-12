@@ -2,6 +2,7 @@
 
 @plugin "tailwindcss-animate";
 
+/* add this custom variant to fix tailwind hover issue on touchscreen devices */
 @custom-variant hover (&:hover);
 
 @custom-variant dark (&:is(.dark *));

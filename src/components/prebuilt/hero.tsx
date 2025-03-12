@@ -43,7 +43,7 @@ export default function Hero() {
           </Button>
         </Link>
 
-        <Link href="https://github.com/wagnerjw/iteration_zero">
+        <Link href="https://github.com/wagnerjw/thoughtfoundry">
           <Button className="text-green-600 bg-gray-300 hover:text-black hover:bg-green-300">
             GitHub <GitHubLogo />
           </Button>
