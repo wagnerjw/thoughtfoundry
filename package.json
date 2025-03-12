@@ -51,6 +51,7 @@
     "eslint-config-next": "15.2.1",
     "husky": "^9.1.7",
     "prettier": "^3.5.3",
+    "react-hooks": "^1.0.1",
     "supabase": "^2.19.5",
     "typescript": "^5"
   },

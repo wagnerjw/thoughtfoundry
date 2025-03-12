@@ -90,6 +90,9 @@ importers:
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
+      react-hooks:
+        specifier: ^1.0.1
+        version: 1.0.1
       supabase:
         specifier: ^2.19.5
         version: 2.19.5
@@ -1859,6 +1862,9 @@ packages:
     resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
     peerDependencies:
       react: ^19.0.0
+
+  react-hooks@1.0.1:
+    resolution: {integrity: sha512-PXU08tw4SvKwkW99qgnyV98x939RCmBC6aXqALPQXPjKq6+6EoH79Rz4KdUozzlpSyWmn2IiEm0vh3p+79aP5w==}
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -4156,6 +4162,8 @@ snapshots:
     dependencies:
       react: 19.0.0
       scheduler: 0.25.0
+
+  react-hooks@1.0.1: {}
 
   react-is@16.13.1: {}
 
