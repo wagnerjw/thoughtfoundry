@@ -1,0 +1,56 @@
+{
+  "name": "iterationzero",
+  "author": "jdubbs",
+  "description": "a Nextjs project template, with optional FastAPI backend and Supabase auth + db",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "github.com/wagnerjw/iterationzero",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.9.0",
+    "pnpm": ">=9.12.3",
+    "npm": "please-use-pnpm"
+  },
+  "scripts": {
+    "prettier": "prettier --write .",
+    "fastapi-install": "echo MAKE SURE YOU HAVE VENV ACTIVATED!!! && pip install -r requirements.txt",
+    "fastapi-dev": "python3 -m uvicorn api.index:app --reload",
+    "next-dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "prepare": "husky",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@radix-ui/react-label": "^2.1.2",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.49.1",
+    "@tailwindcss/postcss": "^4.0.12",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "iterationzero": "link:",
+    "lucide-react": "^0.477.0",
+    "next": "15.2.1",
+    "postcss": "^8.5.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.12",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.1",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "typescript": "^5"
+  }
+}
