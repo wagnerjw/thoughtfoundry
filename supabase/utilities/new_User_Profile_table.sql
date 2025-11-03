@@ -5,7 +5,7 @@ CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 CREATE TABLE IF NOT EXISTS public.user_profile (
   user_id uuid NOT NULL PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
   username text NOT NULL UNIQUE,
-  createdat timestamptz NOT NULL DEFAULT now()
+  confirmed_at timestamptz NOT NULL DEFAULT now()
 );
 
 -- Notes and recommendations:
