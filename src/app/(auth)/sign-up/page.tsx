@@ -1,5 +1,5 @@
-import { SignUpForm } from "@/components/prebuilt/supabase/sign-up-form";
-import Dotbackground from "@/components/ui/dotbackground";
+import { SignUpForm } from '@/app/(auth)/components/supabase_auth/sign-up-form';
+import Dotbackground from '@/components/ui/dotbackground';
 
 export default function Page() {
   return (

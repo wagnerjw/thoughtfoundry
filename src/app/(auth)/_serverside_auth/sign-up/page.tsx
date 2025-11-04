@@ -1,9 +1,9 @@
 import { signUpAction } from '@/app/(auth)/_serverside_auth/authActions';
-import { SubmitButton } from '@/app/(private)/[username]/components/submit-button';
 import {
   FormMessage,
   Message,
-} from '@/components/prebuilt/supabase/form-message';
+} from '@/app/(auth)/components/supabase_auth/form-message';
+import { SubmitButton } from '@/app/(private)/[username]/components/submit-button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import Link from 'next/link';

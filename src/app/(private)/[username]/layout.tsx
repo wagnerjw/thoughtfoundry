@@ -1,4 +1,3 @@
-import HeaderAuth from '@/app/(private)/[username]/components/header-auth';
 import '@/app/globals.css';
 import { jbmono } from '@/fonts/JetbrainsMono';
 import type { Metadata } from 'next';
@@ -22,11 +21,6 @@ export default function AccountLayout({
     <html lang="en">
       <body className={jbmono.className}>
         <main className="items-center flex flex-col min-h-screen">
-          <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
-            <div className="w-full flex justify-between items-center p-3 px-5 text-sm">
-              <HeaderAuth />
-            </div>
-          </nav>
           {children}
         </main>
       </body>
