@@ -1,14 +1,29 @@
 import { Button } from '@/components/ui/button';
 import { createClient } from '@/lib/supabase/server';
 import Link from 'next/link';
-import { redirect } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 
-export default async function AccountPage() {
+export default async function AccountPage({
+  params,
+}: {
+  params: Promise<{ username: string }>;
+}) {
   const supabase = await createClient();
 
   const { data, error } = await supabase.auth.getUser();
   if (error || !data?.user) {
     redirect('/login');
+  }
+
+  // Get the username from the URL
+  const { username } = await params;
+
+  // Get the user's actual username from their metadata
+  const userUsername = data.user.user_metadata.username;
+
+  // If the URL username doesn't match the user's username, return 404
+  if (username !== userUsername) {
+    notFound();
   }
 
   const now = new Date();
