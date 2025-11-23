@@ -1,12 +1,12 @@
 import {
-  FormMessage,
-  Message,
-} from '@/app/(auth)/components/supabase_auth/form-message';
-import { SubmitButton } from '@/app/(auth)/components/supabase_auth/submit-button';
+    FormMessage,
+    Message,
+} from '@/app/(auth)/_components/supabase_auth/form-message';
+import { SubmitButton } from '@/app/(auth)/_components/supabase_auth/submit-button';
+import { signUpAction } from '@/app/(auth)/_serverside_auth/authActions';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import Link from 'next/link';
-import { signInAction } from './actions';
 
 export default async function Signup(props: {
   searchParams: Promise<Message>;
@@ -23,33 +23,32 @@ export default async function Signup(props: {
   return (
     <>
       <form className="items-center justify-center space-y-3 h-screen flex flex-col justified-center min-w-64 max-w-64 mx-auto">
-        <h1 className="text-2xl font-medium">Sign In</h1>
+        <h1 className="text-2xl font-medium">Sign Up</h1>
         <p className="text-sm text text-foreground">
-          Forgot Your Password?{' '}
-          <Link
-            className="text-primary font-medium underline"
-            href="/forgot-password"
-          >
-            Click Here
+          Already have an account?{' '}
+          <Link className="text-primary font-medium underline" href="/login">
+            Sign In
           </Link>
         </p>
         <div className="flex flex-col gap-2 [&>input]:mb-3 mt-8">
+          <Label htmlFor="username">Username</Label>
+          <Input name="username" placeholder="enter a username" required />
           <Label htmlFor="email">Email</Label>
           <Input name="email" placeholder="you@example.com" required />
           <Label htmlFor="password">Password</Label>
           <Input
             type="password"
             name="password"
-            placeholder="Your password"
+            placeholder="enter a password"
             minLength={6}
             required
           />
           <SubmitButton
-            formAction={signInAction}
-            pendingText="Signing in..."
-            className="text-white bg-gray-900 hover:bg-gray-400 hover:text-gray-900"
+            formAction={signUpAction}
+            pendingText="Signing up..."
+            className="text-white bg-gray-900 hover:bg-gray-300 hover:text-gray-900"
           >
-            Sign in
+            Sign Up
           </SubmitButton>
           <FormMessage message={searchParams} />
         </div>

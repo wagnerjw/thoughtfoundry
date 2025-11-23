@@ -1,8 +1,8 @@
 import {
-  FormMessage,
-  Message,
-} from '@/app/(auth)/components/supabase_auth/form-message';
-import { SubmitButton } from '@/app/(auth)/components/supabase_auth/submit-button';
+    FormMessage,
+    Message,
+} from '@/app/(auth)/_components/supabase_auth/form-message';
+import { SubmitButton } from '@/app/(auth)/_components/supabase_auth/submit-button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { forgotPasswordAction } from './actions';

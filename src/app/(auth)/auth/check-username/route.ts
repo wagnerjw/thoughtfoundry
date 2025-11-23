@@ -12,8 +12,8 @@ export async function GET(request: NextRequest) {
 
   // Query your `user_profiles` (or similar) table
   const { data, error } = await supabase
-    .from("user_profiles")
-    .select("id")
+    .from("user_profile")
+    .select("user_id")
     .eq("username", username);
 
   if (error) {

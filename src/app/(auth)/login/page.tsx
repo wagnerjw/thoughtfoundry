@@ -1,4 +1,4 @@
-import { LoginForm } from '@/app/(auth)/components/supabase_auth/login-form';
+import { LoginForm } from '@/app/(auth)/_components/supabase_auth/login-form';
 import Dotbackground from '@/components/ui/dotbackground';
 
 export default function Page() {
