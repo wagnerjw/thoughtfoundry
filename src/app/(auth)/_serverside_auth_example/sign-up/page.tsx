@@ -1,9 +1,9 @@
 import {
-    FormMessage,
-    Message,
+  FormMessage,
+  Message,
 } from '@/app/(auth)/_components/supabase_auth/form-message';
 import { SubmitButton } from '@/app/(auth)/_components/supabase_auth/submit-button';
-import { signUpAction } from '@/app/(auth)/_serverside_auth/authActions';
+import { signUpAction } from '@/app/(auth)/_serverside_auth_example/authActions';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import Link from 'next/link';

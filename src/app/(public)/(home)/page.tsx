@@ -1,4 +1,4 @@
-import Hero from '@/app/(public)/(home)/components/hero';
+import Hero from '@/app/(public)/(home)/_components/hero';
 import Dotbackground from '@/components/ui/dotbackground';
 import { createClient } from '@/lib/supabase/server';
 
