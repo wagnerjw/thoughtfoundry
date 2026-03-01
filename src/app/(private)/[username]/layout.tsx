@@ -8,8 +8,8 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata: Metadata = {
   metadataBase: new URL(defaultUrl),
-  title: 'AI Starter Template',
-  description: 'All The Things You Need To Get Started With AI',
+  title: 'Thoughtfoundry',
+  description: 'A knowledge operating system for non-technical teams.',
 };
 
 export default function AccountLayout({
